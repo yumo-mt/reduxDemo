@@ -8,6 +8,7 @@ import rootReducer from './Reducers';
 import logger from 'redux-logger';
 
 const athunk = applyMiddleware(thunk,logger);
+
 const store = createStore(
   rootReducer,
   athunk
