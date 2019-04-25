@@ -124,7 +124,6 @@ export default function combineReducers(reducers) {
   }
 
   return function combination(state = {}, action) {
-    debugger
 
     if (sanityError) {
       throw sanityError

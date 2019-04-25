@@ -23,7 +23,6 @@ export var ActionTypes = {
  * @returns {Store} 返回一个store
  */
 export default function createStore(reducer, preloadedState, enhancer) {
-  debugger;
   // 如果第二个参数为方法且第三个参数为空，则将两个参数交换
   if (typeof preloadedState === 'function' && typeof enhancer === 'undefined') {
     enhancer = preloadedState
@@ -37,7 +36,6 @@ export default function createStore(reducer, preloadedState, enhancer) {
 
     return enhancer(createStore)(reducer, preloadedState)
   }
-  debugger;
   // reducer 必须是个函数
   if (typeof reducer !== 'function') {
     throw new Error('Expected the reducer to be a function.')

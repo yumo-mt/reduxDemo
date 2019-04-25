@@ -46,8 +46,6 @@ const setText = (state = { text: '' }, action) => {
     }
   }
 }
-
-debugger
 const rootReducers = combineReducers({
   calculate,
   setText,
